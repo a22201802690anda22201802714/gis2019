@@ -108,6 +108,7 @@
             android:layout_centerInParent="true"
             android:layout_marginBottom="15dp"
             android:padding="10dp"
+            android:elevation="0.2dp"
             >
 
             <ImageView
@@ -141,6 +142,7 @@
             android:layout_alignParentEnd="true"
             android:layout_marginBottom="15dp"
             android:padding="10dp"
+            android:elevation="0.2dp"
             >
 
             <ImageView
@@ -171,6 +173,7 @@
             android:layout_marginRight="15dp"
             android:layout_centerInParent="true"
             android:padding="10dp"
+            android:elevation="0.2dp"
             >
 
             <ImageView
@@ -202,6 +205,7 @@
             android:layout_alignParentRight="true"
             android:layout_alignParentEnd="true"
             android:padding="10dp"
+            android:elevation="0.2dp"
             >
 
             <ImageView
