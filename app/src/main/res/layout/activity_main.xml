@@ -1,0 +1,278 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:paddingRight="10dp"
+    android:paddingLeft="10dp"
+    android:background="#f0f0f0">
+
+    <RelativeLayout
+        android:id="@+id/apps"
+        android:layout_width="match_parent"
+        android:layout_height="180dp"
+        android:background="@drawable/bg_main"
+        android:padding="5dp">
+        <ImageView
+            android:id="@+id/logo"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:src="@drawable/logo"
+            android:layout_alignParentRight="true"
+            android:layout_centerInParent="true"
+            />
+        <TextView
+            android:id="@+id/app"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/kaushan_script"
+            android:text="Aplikasi Mobile GIS"
+            android:textColor="#FFF"
+            android:textSize="20dp"
+            android:layout_toLeftOf="@+id/logo"
+            android:layout_centerInParent="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="45dp"
+            android:layout_marginLeft="10dp"/>
+
+        <TextView
+            android:id="@+id/app1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/kaushan_script"
+            android:layout_below="@+id/app"
+            android:layout_marginLeft="10dp"
+            android:text="Pemerintahan Kab. Sumbawa"
+            android:textColor="#FFF"
+            android:textSize="20dp"
+            android:layout_centerInParent="true"
+            android:layout_alignParentLeft="true"
+            />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/welcome"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:background="@drawable/bg_welcome"
+        android:layout_centerInParent="true"
+        android:layout_below="@+id/apps"
+        android:layout_marginTop="-30dp"
+        android:layout_marginBottom="30dp"
+        >
+
+        <TextView
+            android:id="@+id/welco"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:fontFamily="@font/mukta_vaani_extralight"
+            android:text="Selamat Datang, "
+            android:textSize="20dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/user"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:fontFamily="@font/mukta_vaani_extralight"
+            android:layout_toRightOf="@+id/welco"
+            android:text=""
+            android:textSize="20dp"
+            android:textStyle="bold" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/menu"
+        android:layout_width="300dp"
+        android:layout_height="280dp"
+        android:background="@drawable/bg_welcome"
+        android:layout_centerInParent="true"
+        android:layout_below="@+id/welcome"
+        android:padding="15dp"
+        android:layout_marginBottom="30dp"
+        >
+
+        <RelativeLayout
+            android:id="@+id/Peta"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:background="@drawable/bg_welcome"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentLeft="true"
+            android:layout_marginRight="15dp"
+            android:layout_centerInParent="true"
+            android:layout_marginBottom="15dp"
+            android:padding="10dp"
+            >
+
+            <ImageView
+                android:id="@+id/lihatpeta"
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:layout_alignParentTop="true"
+                android:layout_centerInParent="true"
+                app:srcCompat="@drawable/map"
+                android:layout_marginBottom="10dp"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Lihat Peta"
+                android:textStyle="bold"
+                android:layout_centerInParent="true"
+                android:layout_below="@+id/lihatpeta"/>
+
+
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/Data"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:background="@drawable/bg_welcome"
+            android:layout_toRightOf="@+id/Peta"
+            android:layout_marginLeft="15dp"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginBottom="15dp"
+            android:padding="10dp"
+            >
+
+            <ImageView
+                android:id="@+id/lihatdata"
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:layout_alignParentTop="true"
+                android:layout_centerInParent="true"
+                app:srcCompat="@drawable/data"
+                android:layout_marginBottom="10dp"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Lihat Data"
+                android:textStyle="bold"
+                android:layout_centerInParent="true"
+                android:layout_below="@+id/lihatdata"/>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/Tambah"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:background="@drawable/bg_welcome"
+            android:layout_below="@+id/Peta"
+            android:layout_alignParentLeft="true"
+            android:layout_marginRight="15dp"
+            android:layout_centerInParent="true"
+            android:padding="10dp"
+            >
+
+            <ImageView
+                android:id="@+id/tambahdata"
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:layout_alignParentTop="true"
+                android:layout_centerInParent="true"
+                app:srcCompat="@drawable/tambah"
+                android:layout_marginBottom="10dp"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Lihat Data"
+                android:textStyle="bold"
+                android:layout_centerInParent="true"
+                android:layout_below="@+id/tambahdata"/>
+
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/Logout"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:background="@drawable/bg_welcome"
+            android:layout_below="@+id/Data"
+            android:layout_marginLeft="15dp"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:padding="10dp"
+            >
+
+            <ImageView
+                android:id="@+id/logout"
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:layout_alignParentTop="true"
+                android:layout_centerInParent="true"
+                app:srcCompat="@drawable/logout"
+                android:layout_marginBottom="10dp"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Logout"
+                android:textStyle="bold"
+                android:layout_centerInParent="true"
+                android:layout_below="@+id/logout"/>
+
+
+        </RelativeLayout>
+
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/copy"
+        android:layout_width="300dp"
+        android:layout_height="90dp"
+        android:background="@drawable/bg_welcome"
+        android:layout_centerInParent="true"
+        android:layout_below="@+id/menu"
+        android:layout_marginBottom="30dp"
+        android:padding="5dp"
+        >
+
+
+        <TextView
+            android:id="@+id/copyright"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_alignParentTop="true"
+            android:fontFamily="@font/mukta_vaani_extralight"
+            android:text="Copyright © 2019"
+            android:textSize="12dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/wildan"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:fontFamily="@font/mukta_vaani_extralight"
+            android:layout_below="@+id/copyright"
+            android:text="Wildan Rozaqi                         (A22.2018.02690)"
+            android:textSize="13dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/nando"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:fontFamily="@font/mukta_vaani_extralight"
+            android:layout_below="@+id/wildan"
+            android:text="Rifa'i Rejal maynando            (A22.2018.02714)"
+            android:textSize="13dp"
+            android:textStyle="bold" />
+    </RelativeLayout>
+
+
+
+
+</RelativeLayout>
